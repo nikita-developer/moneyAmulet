@@ -1,0 +1,88 @@
+
+.myMoney {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.myMoney__title {
+    width: 100%;
+
+    &.myMoney__title {
+        margin-bottom: 150px;
+    }
+}
+
+.myMoney__description {
+    position: relative;
+    max-width: 500px;
+    font-size: 18px;
+
+    & span {
+        position: relative;
+        display: block;
+        margin-bottom: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+        &::before {
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 30%;
+            height: 2px;
+            content: '';
+            background-color: #c8a77a;
+        }
+    }
+
+    .myMoney__descriptio-border {
+        position: absolute;
+        top: -50px;
+        right: -40px;
+        width: 80%;
+        height: calc(100% + 100px);
+        content: '';
+        border-top: 4px solid #84888c;
+        border-right: 4px solid #84888c;
+        border-bottom: 4px solid #84888c;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 25px;
+            content: '';
+            background-color: #84888c;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 4px;
+            height: 25px;
+            content: '';
+            background-color: #84888c;
+        }
+    }
+}
+
+.myMoney__clearMoney {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    max-width: 360px;
+}
+
+.myMoney__clearMoney-icon {
+    position: absolute;
+    bottom: 35px;
+    left: -180px;
+    max-width: 135px;
+    transform: rotate(45deg);
+}

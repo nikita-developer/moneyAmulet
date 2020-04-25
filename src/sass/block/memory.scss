@@ -1,0 +1,71 @@
+
+.memory {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.memory__media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.memory__box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.memory__item {
+    position: relative;
+    padding: 15px;
+    letter-spacing: 1px;
+    cursor: default;
+    border-bottom: 1px solid transparent;
+    box-shadow: 15px 15px 4px -12px rgba(0, 0, 0, 0.09);
+    transition: .3s;
+
+    & span {
+        font-size: 28px;
+        font-weight: 800;
+        color: #c8a77a;
+    }
+
+    &:hover {
+        box-shadow: none;
+        transform: scale(0.98);
+
+        &::before {
+            background-color: #ccc;
+        }
+
+        &::after {
+            background-color: #ccc;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        width: 80%;
+        height: 1px;
+        content: '';
+        background-color: transparent;
+        transition: .3s background-color;
+    }
+
+    &::after {
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        width: 1px;
+        height: 80%;
+        content: '';
+        background-color: transparent;
+        transition: .3s background-color;
+    }
+}
