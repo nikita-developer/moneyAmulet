@@ -1,0 +1,69 @@
+
+.commit__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.commit__item {
+    width: 30%;
+    box-shadow: 0 0 17px -10px #000;
+}
+
+.commit__body {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.commit__name {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+
+    &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        content: '';
+        background-color: #dadada;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 2px;
+        content: '';
+        background-color: #c8a77a;
+    }
+}
+
+.commit__description {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.63);
+
+    & .more {
+        display: block;
+        width: 170px;
+        height: 40px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        line-height: 40px;
+        color: #c8a77a;
+        text-align: center;
+        text-transform: lowercase;
+        cursor: pointer;
+        border: 1px solid #c8a77a;
+        transition: .3s border-color;
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}

@@ -29,6 +29,25 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_help {
+        background-image: url("../media/section/help.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_instruction {
+        background-color: #fff;
+        background-image: url("../media/section/instruction.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_commit {
+        background-color: #ededed;
+    }
 }
 
 .section__title {
