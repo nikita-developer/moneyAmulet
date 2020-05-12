@@ -3,10 +3,33 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    & .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px !important;
+    }
+
+    & .owl-dot {
+        width: 15px !important;
+        height: 15px !important;
+        margin-right: 3px !important;
+        margin-left: 3px !important;
+        background-color: #000 !important;
+        border-radius: 50% !important;
+
+        &.active {
+            background-color: #c8a77a !important;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .commit__item {
-    width: 30%;
+    margin-bottom: 10px;
     box-shadow: 0 0 17px -10px #000;
 }
 

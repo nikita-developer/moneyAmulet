@@ -86,3 +86,58 @@
     max-width: 135px;
     transform: rotate(45deg);
 }
+
+@media (max-width: 1200px) {
+    .myMoney__description {
+        max-width: 390px;
+    }
+
+    .myMoney__clearMoney-icon {
+        left: -95px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    .myMoney__description {
+        max-width: 420px;
+    }
+
+    .myMoney__clearMoney {
+        max-width: 260px;
+    }
+
+    .myMoney__clearMoney-icon {
+        bottom: 225px;
+        left: -70px;
+        transform: rotate(-110deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .myMoney__clearMoney {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        max-width: none;
+        margin-top: 100px;
+    }
+
+    .myMoney__clearMoney-icon {
+        bottom: calc(100% - 60px);
+        left: calc(100% - 128px);
+        transform: rotate(-5deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .myMoney__description {
+        max-width: calc(100% - 39px);
+    }
+
+    .myMoney__title {
+        &.myMoney__title {
+            margin-bottom: 110px;
+        }
+    }
+}

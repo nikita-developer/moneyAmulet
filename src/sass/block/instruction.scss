@@ -236,3 +236,96 @@
         background-color: #c8a77a;
     }
 }
+
+@media (max-width: 1200px) {
+    .instruction__product {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 100px;
+    }
+
+    .instruction__title {
+        &.section__title {
+            margin-bottom: 100px;
+        }
+    }
+
+    .instruction__massonry {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 960px) {
+    .instruction__item {
+        padding-right: 150px;
+
+        &::before {
+            top: 50%;
+            right: -280px;
+            height: 1000px;
+            transform: translateY(-50%) rotate(-15deg);
+        }
+    }
+
+    .instruction__item-title {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    .instruction__footer {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .instruction__box {
+        flex-direction: column;
+    }
+
+    .instruction__description {
+        max-width: calc(100% - 40px);
+    }
+
+    .instruction__product {
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .instruction__massonry {
+        margin-top: 60px;
+    }
+
+    .instruction__item {
+        width: 100%;
+    }
+
+    .instruction__footer {
+        padding-top: 20px;
+        padding-right: 130px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instruction__title {
+        &.section__title {
+            margin-bottom: 60px;
+        }
+    }
+
+    .instruction__footer {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        & span {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, .96);
+            box-shadow: 0 0 10px #0003;
+        }
+    }
+}

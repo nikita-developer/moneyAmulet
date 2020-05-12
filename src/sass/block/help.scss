@@ -34,3 +34,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .help__title {
+        &.section__title {
+            padding-left: 0;
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    .help__description {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .help__media {
+        position: static;
+        margin-bottom: -60px;
+    }
+}

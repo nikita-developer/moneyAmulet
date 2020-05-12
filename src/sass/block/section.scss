@@ -48,6 +48,10 @@
     &_commit {
         background-color: #ededed;
     }
+
+    &_footer {
+        background-color: #000;
+    }
 }
 
 .section__title {
@@ -67,5 +71,41 @@
         content: '';
         background-color: #c8a77a;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .section {
+        &_face {
+            padding-bottom: 260px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-bottom: 100px;
+        }
+
+        &_myMoney {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-top: 0;
+            background-image: url("../media/section/myMoney-768.jpg");
+            background-position: center top;
+        }
+    }
+
+    .section__title {
+        margin-bottom: 60px;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .section__title {
+        font-size: 28px;
     }
 }
