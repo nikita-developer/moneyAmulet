@@ -18,6 +18,8 @@
 
 .face__box {
     &_left {
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,7 +89,7 @@
 
 .face__sub-title {
     display: block;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 38px;
     color: #fff;
@@ -106,8 +108,10 @@
 }
 
 .face__item {
+    font-size: 22px;
+
     & img {
-        max-width: 40px;
+        max-width: 50px;
         margin-right: 10px;
     }
 
@@ -129,10 +133,30 @@
             position: absolute;
             bottom: -10px;
             left: 0;
-            width: 30%;
+            width: 0;
             height: 3px;
             content: '';
             background-color: #84888c;
+        }
+    }
+}
+
+.face__item-text {
+    &_animate1 {
+        &::before {
+            animation: linear lineEvent1 8s infinite;
+        }
+    }
+
+    &_animate2 {
+        &::before {
+            animation: linear lineEvent2 6s infinite;
+        }
+    }
+
+    &_animate3 {
+        &::before {
+            animation: linear lineEvent3 3s infinite;
         }
     }
 }
@@ -141,11 +165,19 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    max-width: 300px;
-    margin-left: -97px;
+    width: 681px;
+    height: 454px;
+    background-image: url('../media/face/bg-amylet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-50%);
 }
 
 .face__product-media {
+    position: absolute;
+    bottom: 0;
+    left: 260px;
+    width: 300px;
     perspective: 500px;
     transform-style: preserve-3d;
 
@@ -160,39 +192,44 @@
     }
 }
 
-.face__product-discount {
-    margin-bottom: 50px;
-    font-size: 22px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-
-    & span {
-        display: block;
-
-        &:nth-child(2) {
-            font-size: 12px;
-        }
-
-        &:nth-child(3) {
-            display: inline-block;
-            padding: 5px 7px 5px 5px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-weight: 800;
-            color: #a09949;
-            border-right: 1px solid #84888c;
-            border-bottom: 1px solid #84888c;
-        }
-
-        &:nth-child(4) {
-            font-size: 18px;
-            text-decoration: line-through;
-        }
+@keyframes lineEvent1 {
+    50% {
+        width: 70%;
     }
 
-    & img {
-        max-width: 90px;
-        margin-bottom: 5px;
+    80% {
+        background-color: #c8a77a;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes lineEvent2 {
+    50% {
+        width: 30%;
+    }
+
+    80% {
+        background-color: #c8a77a;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes lineEvent3 {
+    50% {
+        width: 50%;
+    }
+
+    80% {
+        background-color: #c8a77a;
+    }
+
+    100% {
+        width: 0;
     }
 }

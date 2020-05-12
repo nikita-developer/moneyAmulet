@@ -46,24 +46,4 @@
 .commit__description {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.63);
-
-    & .more {
-        display: block;
-        width: 170px;
-        height: 40px;
-        margin-top: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        line-height: 40px;
-        color: #c8a77a;
-        text-align: center;
-        text-transform: lowercase;
-        cursor: pointer;
-        border: 1px solid #c8a77a;
-        transition: .3s border-color;
-
-        &:hover {
-            border-color: transparent;
-        }
-    }
 }
