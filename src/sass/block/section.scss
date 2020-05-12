@@ -108,4 +108,27 @@
     .section__title {
         font-size: 28px;
     }
+
+    .section {
+        &_face {
+            background-image: url("../media/section/face-480.jpg");
+            background-attachment: inherit;
+        }
+
+        &_myMoney {
+            background-image: url("../media/section/myMoney-480.jpg");
+        }
+
+        &_memory {
+            background-image: url("../media/section/memory-480.jpg");
+        }
+
+        &_help {
+            background-image: url("../media/section/help-480.jpg");
+        }
+
+        &_instruction {
+            background-image: url("../media/section/instruction-480.jpg");
+        }
+    }
 }
